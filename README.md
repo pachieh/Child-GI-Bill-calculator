@@ -4,13 +4,13 @@ Simple GI Bill calculator for you to see how much it will cover and what you (or
 Don't forget that the GI Bill has a total of 36 months available. One academic year = 9 months. The calculator won't let you allocate more than 36 TOTAL months. 
 
 PACKAGES NEEDED FOR THIS TO WORK
-streamlit
-pandas
-requests
-beautifulsoup4
-google-generativeai
-openai
-anthropic
+* streamlit
+* pandas
+* requests
+* beautifulsoup4
+* google-generativeai
+* openai
+* anthropic
 
 If you use the Docker container, the requirements.txt has all that in the build file so it gets pulled and installed into the container. Docker Desktop is FREE use it unless you are using a different container software. 
 
