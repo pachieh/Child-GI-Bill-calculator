@@ -16,8 +16,7 @@ If you use the Docker container, the requirements.txt has all that in the build 
 
 FEATURES
 * Save and re-load your inputs! Saving outputs a JSON file that has all the relevent data input in it so you can come back to your work. Default save is to your 'Downloads' folder.
-* AI integration includes Ollama, Gemini, OpenAI, and Anthropic APIs. Make sure you create your API key first if using one of the cloud providers. If using Ollama, you have the choice in the dropdown under the URL to select the model depending on what you have installed.
-* Copy and paste the URL for the tuition page of the school and the AI agent will pull relevent costs out and directly into the calculator. 
+* Copy and paste the URL for the tuition page of the school and the AI agent will pull relevent costs out and directly into the calculator. AI integration includes Ollama, Gemini, OpenAI, and Anthropic APIs. Make sure you create your API key first if using one of the cloud providers. If using Ollama, you have the choice in the dropdown under the URL to select the model depending on what you have installed.
 * AI makes mistakes, make sure it pulls the right numbers from the university or college tuition page correctly before blindly trusting it.
 * The 'Student Covers Years' is intended to integrate burden sharing costs if you decide to NOT give one of your kids or spouse all of your GI bill. It calculates in half year increments.
 
