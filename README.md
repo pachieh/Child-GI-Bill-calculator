@@ -30,10 +30,10 @@ Docker Instructions (recommended):
 
 Manual Docker Instructions:
 * Download all files to a local folder
-# Build the image and run the following command
+* Build the image and run the following command
 docker build -t gibill-planner .
 
-# Run the container with the following command
+* Run the container with the following command
 docker run -d -p 8501:8501 --name gibill-planner gibill-planner
 
 FEATURES
