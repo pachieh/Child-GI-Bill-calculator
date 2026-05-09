@@ -14,6 +14,14 @@ PACKAGES NEEDED FOR THIS TO WORK
 
 If you use the Docker container, the requirements.txt has all that in the build file so it gets pulled and installed into the container. Docker Desktop is FREE use it unless you are using a different container software. 
 
+Note on Local AI (Ollama) if running this in a container and not outside Docker:
+If you are running Ollama locally on your host machine to extract university data, you will need to change the "Endpoint" in the app's AI Configuration sidebar.
+
+Because the app is running inside a Docker container, http://localhost:11434 refers to the container itself. To connect to Ollama running on your computer, change the endpoint in the app to:
+http://host.docker.internal:11434
+
+If you are running outside of Docker with all the services installed naitively (like I am right now locally on my Mac), use http://localhost:11434
+
 FEATURES
 * Save and re-load your inputs! Saving outputs a JSON file that has all the relevent data input in it so you can come back to your work. Default save is to your 'Downloads' folder.
 * Copy and paste the URL for the tuition page of the school and the AI agent will pull relevent costs out and directly into the calculator. AI integration includes Ollama, Gemini, OpenAI, and Anthropic APIs. Make sure you create your API key first if using one of the cloud providers. If using Ollama, you have the choice in the dropdown under the URL to select the model depending on what you have installed.
