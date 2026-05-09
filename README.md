@@ -22,6 +22,20 @@ http://host.docker.internal:11434
 
 If you are running outside of Docker with all the services installed naitively (like I am right now locally on my Mac), use http://localhost:11434
 
+Docker Instructions (recommended):
+* Download all files to a local folder
+* In the Docker terminal, navigate to the folder you saved all the files
+* Run the following command: docker-compose up -d --build
+* Once the container has built and run, navigate to http://localhost:8501
+
+Manual Docker Instructions:
+* Download all files to a local folder
+# Build the image and run the following command
+docker build -t gibill-planner .
+
+# Run the container with the following command
+docker run -d -p 8501:8501 --name gibill-planner gibill-planner
+
 FEATURES
 * Save and re-load your inputs! Saving outputs a JSON file that has all the relevent data input in it so you can come back to your work. Default save is to your 'Downloads' folder.
 * Copy and paste the URL for the tuition page of the school and the AI agent will pull relevent costs out and directly into the calculator. AI integration includes Ollama, Gemini, OpenAI, and Anthropic APIs. Make sure you create your API key first if using one of the cloud providers. If using Ollama, you have the choice in the dropdown under the URL to select the model depending on what you have installed.
